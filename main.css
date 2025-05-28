@@ -4,10 +4,13 @@
     /* margin: 2px auto; */
     padding: 0 0px;
 }
+section{
+    scroll-behavior: smooth;
+}
 .contact-info{
     text-align: center; 
 
-    margin: 1px;auto; 
+    margin: 1px;
     color:#cfd6e1;
     font-size: 11.8098px;
     display: flex;
@@ -40,6 +43,7 @@
 
 .contact-info a:hover {
     text-decoration: underline;
+    color: #20c997;
 }
 
 .social-links {
@@ -247,7 +251,25 @@ img {
     border-radius: 48px;
    
 }
+ /* .produc-info .spacer{
 
+    flex-grow: 1;
+    color: #bcbcbc;
+} */
+/* .product-info {
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  .text-muted reviews {
+    flex-grow: 1;
+  }
+  
+  .reviews {
+    color: #6c757d;
+  } */
 .product {
     width: 180px;
     display: flex;
@@ -339,6 +361,9 @@ img {
     text-align: center;
     margin: 50px  ;
 }
+.Featured:hover {
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* تأثير الظل عند التمرير */
+}
 .Featured img {
     width: 100% ;
   height: 200px;
@@ -385,15 +410,145 @@ img {
     justify-content: space-between; /* هذا السطر يقوم بتوزيع النجوم والسعر على طرفي السطر */
     align-items: center;
 }
+
 .footer {
-    background-color: #212121;
-    color: #ffffff;
-    padding: 60px 80px;
-    text-align: center;
+    background-color: #f8f9fa;
+}
+.footer hr{
+    color: #d3d3d3;
+}
+.footer-container {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    /* gap: 70px; */
-}   
-  .zay-footer {
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+    gap: 40px;
+}
+
+.social-icons a {
+    margin-left: 15px;
+    color: #6c757d;             /* اللون الافتراضي - رمادي */
+    font-size: 16px;
+    transition: color 0.3s ease, transform 0.3s ease, text-shadow 0.3s ease;
+    display: inline-block;
+}
+
+.social-icons a:hover {
+    color: #28a745;             /* أخضر */
+    transform: scale(1.2);      /* تكبير */
+    text-shadow: 0 0 8px rgba(40, 167, 69, 0.7);  /* توهج أخضر */
+}
+
+.logo1 {
+    font-size: 24px;
+    color: hsl(134, 61%, 41%);
+    margin-bottom: 3px;
     
+    display: inline-block;
+    padding-bottom: -40px;
+    width: 150px;
+}
+
+.footer p,
+.footer a {
+    color: #6c757d;
+    font-size: 15px;
+    line-height: 1.8;
+    text-decoration: none;
+}
+
+.footer-title {
+    font-size: 20px;
+    color: #28a745;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #6c757d;
+    text-decoration: none;
+    transition: color 0.3s ease, padding-left 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #28a745;
+    padding-left: 8px;
+}
+
+.footer i {
+    margin-right: 8px;
+    color: #28a745;
+}
+.footer-bottom {
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    flex-wrap: wrap;
+    font-size: 14px;
+    color: #6c757d;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+.social-icons a {
+    margin-left: 15px;
+    color: #6c757d;
+    font-size: 16px;
+    transition: color 0.3s ease, transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #6c757d;
+    transform: scale(1.2);
+    text-shadow: 0 0 8px rgba(40, 167, 69, 0.6);
+}
+
+.newsletter-form {
+  color: #bcbcbc;
+    gap: 10px;
+    border: #ccc;
+}
+
+
+.copyright {
+    background-color: #f8f9fa;
+    text-align: center;
+ 
+    font-size: 14px;
+    color: #6c757d;}
+    .underline-green {
+        color: #6c757d; /* الأخضر الأساسي */
+        text-decoration: underline;
+        transition: color 0.3s ease;
+    }
+    
+    .underline-green:hover {
+        color: #28a745; /* أخضر أغمق عند المرور */
+    }
+    
+
+
+@media (max-width: 576px) {
+    .copyright {
+        font-size: 13px;
+        padding: 12px 8px;
+    }
+}
+
+
+
+
